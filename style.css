@@ -1,0 +1,402 @@
+:root {
+  --shadow: 0px 1px 2px rgb(217, 217, 217);
+  --font: #3f2d18;
+  --cream: #824829;
+}
+
+@font-face {
+  font-family: monotype;
+  src: url(font/Monotype\ Corsiva.ttf);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.hero {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  background-image: url(img/bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: monotype;
+  font-size: 6rem;
+  text-shadow: var(--shadow);
+  color:var(--cream);
+}
+
+.hero h2{
+  font-size: 3rem;
+  font-weight: bo;
+  color: var(--cream);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: var(--font);
+}
+
+.hero a {
+  color: var(--cream);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: var(--cream);
+  color: white;
+}
+
+.simply-countdown > .simply-section {
+  background-color: var(--cream);
+}
+
+.frame-tl,
+.frame-tr,
+.frame-br,
+.frame-bl {
+  width: 350px;
+}
+
+.mynavbar {
+  background-color: rgb(255, 255, 255) !important;
+  padding: 0rem 5rem;
+}
+
+.mynavbar .navbar-brand {
+  font-family: "Ephesis", cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: var(--cream);
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+  color: var(--cream);
+}
+
+.mempelai {
+  background-image: url(img/bg.jpeg);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mempelai h5 {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: var(--font);
+  margin-bottom: 20px;
+}
+
+.nama-mempelai p,
+.info p,
+.rsvp p,
+.thanks p,
+.gifts p {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: var(--font);
+}
+
+.nama-mempelai h1 {
+  font-size: 3.5rem;
+  font-family: serif;
+  color: var(--cream);
+  text-shadow: var(--shadow);
+  font-family: monotype;
+}
+
+.nama-mempelai h2 {
+  font-family: serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  color: var(--font);
+  font-style: italic;
+  font-family: monotype;
+}
+
+.nama-mempelai p {
+  margin-bottom: 2rem;
+}
+
+.info,
+.rsvp,
+.quotes,
+.thanks,
+.gallery,
+.gifts {
+  background-image: url(img/bg.jpeg);
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.info h2,
+.thanks h1,
+.gallery h2,
+.gifts h2 {
+  color: var(--cream);
+  font-family: serif;
+  font-size: 4rem;
+  text-shadow: var(--shadow);
+}
+
+.info a {
+  color: white;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.244);
+  background-color: var(--cream);
+  border: 0;
+}
+
+.info a:hover {
+  color: var(--font);
+  background-color: white;
+}
+
+.info .card {
+  background-color: #ffffff43 !important;
+  background-size: cover;
+  color: var(--cream) !important;
+  letter-spacing: 0.1rem;
+  border: 1px solid var(--cream);
+  border-radius: 20px;
+  padding: 10px 30px 30px 30px;
+}
+
+.info .card-header {
+  border-bottom: 1px solid var(--cream);
+  background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 10px;
+  font-family: monotype;
+}
+
+.info .card-body {
+  font-family: serif;
+  font-weight: 300;
+  float: left;
+}
+
+.info .card-body ul {
+  font-style: normal;
+}
+
+.info .btn {
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+.rsvp button {
+  background-color: var(--cream);
+  border: 1px solid var(--cream);
+  color: white;
+  padding: 5px 30px;
+  display: block;
+  margin: auto;
+  box-shadow: var(--shadow);
+}
+
+.rsvp button:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: var(--font);
+}
+
+.quotes {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+}
+
+.quotes h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: var(--cream);
+}
+
+.gifts img {
+  width: 130px;
+  margin-bottom: -30px;
+  margin-bottom: 20px;
+}
+
+.gifts p {
+  margin-bottom: 0;
+}
+
+.thanks h1 {
+  margin-top: -15px;
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--cream);
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+section {
+  overflow: hidden;
+}
+
+@keyframes rotating {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 767px) {
+  html {
+    font-size: 72.5%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 50px;
+    margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .info .card-body .pemisah {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Mobuile */
+@media (max-width: 576px) {
+  html {
+    font-size: 55%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 35px;
+    margin: 3px;
+  }
+
+  .hero h4,
+  .hero p,
+  .hero a,
+  .mempelai h5,
+  .mempelai p,
+  .info p,
+  .info .card-header,
+  .rsvp p,
+  .quotes p,
+  .thanks p,
+  .gifts p {
+    font-size: 2.2rem;
+  }
+
+  .info a,
+  .info span,
+  .info .btn,
+  .rsvp label,
+  .rsvp input,
+  .rsvp select,
+  .rsvp button {
+    font-size: 1.5rem;
+  }
+
+  .mempelai {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mempelai h1 {
+    font-size: 3rem;
+  }
+
+  .card-body span {
+    font-size: 15px;
+  }
+
+  .frame-tl,
+  .frame-tr,
+  .frame-bl,
+  .frame-br {
+    width: 250px;
+  }
+
+  .gallery {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* 343 */
+@media (max-width: 343px) {
+  html {
+    font-size: 45%;
+  }
+}
