@@ -36,20 +36,6 @@ btnHero.addEventListener("click", function(){
   navbar.style.display = 'flex'// Atau 'block' tergantung pada layout CSS kamu
 })
 
-const addToCalendarButton = document.getElementById('saveDateButton');
-
-addToCalendarButton.addEventListener('click', () => {
-  const eventTitle = 'Ngunduh Mantu Reza dan Ami'; // Judul acara
-  const eventLocation = 'Jl. Merak No.11 Komplek Perumahan Pemda Langkat Kwala Bingai Kec Stabat Kab Langkat Sumatera Utara'; // Lokasi acara
-  const startDate = new Date(2024, 3, 20); // Tanggal mulai acara (20 April 2024)
-  const endDate = new Date(2024, 3, 20); // Tanggal akhir acara (20 April 2024)
-
-  const calendarUrl = `BEGIN:VEVENT\nSUMMARY:${eventTitle}\nLOCATION:${eventLocation}\nDTSTART:${startDate.toISOString().replace(/-|:|\.\d+/g, '')}\nDTEND:${endDate.toISOString().replace(/-|:|\.\d+/g, '')}\nEND:VEVENT`;
-  
-  const encodedCalendarUrl = encodeURI(`data:text/calendar;charset=utf8,${calendarUrl}`);
-  
-  window.open(encodedCalendarUrl);
-});
 
 
 document.addEventListener('DOMContentLoaded', function() {
