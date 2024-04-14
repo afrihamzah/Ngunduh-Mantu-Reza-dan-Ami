@@ -85,84 +85,181 @@
         <h1 class="mb-3">Reza & Ami</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown mt-5"></div>
-        <a href="#quotes" class="btn btn-lg mt-5" onClick="enablescroll()"
+        <a
+          href="#home"
+          id="btn-hero"
+          class="btn btn-lg mt-5"
+          onClick="enablescroll()"
           >Lihat Undangan</a
         >
       </main>
     </section>
 
-    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top mynavbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Wedding</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav align-items-center ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#quotes">Quotes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mempelai">Mempelai</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#info">Info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gifts">Gifts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#thanks">Thanks</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav class="navbar navbar-expand fixed-bottom justify-content-center">
+      <ul class="navbar-nav nav-justified w-75 bg-white p-2 rounded-4 gap-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#home"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-house-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"
+              />
+              <path
+                d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mempelai"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-heart-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#info"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-calendar-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1m7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-images"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+              <path
+                d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gifts"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-gift-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#thanks"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-chat-dots-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
     </nav>
 
-    <section class="quotes" id="quotes">
-      <img
-        src="img/frame-tr.png"
-        class="frame-tr position-absolute top-0 end-0"
-        data-aos="fade-left"
-        data-aos-duration="3000"
-        data-aos-easing="ease-in-out"
-      />
-      <img
-        src="img/frame-tl.png"
-        class="frame-tl position-absolute top-0 start-0"
-        data-aos="fade-right"
-        data-aos-duration="3000"
-        data-aos-easing="ease-in-out"
-      />
-      <div
-        class="container text-center"
-        data-aos="fade-down"
-        data-aos-easing="ease-in"
-        data-aos-duration="3000"
-      >
-        <h1>Qs. Ar-Rum 21</h1>
-        <p>
-          "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
-          pasangan-pasangan untukmu dari jenis sendiri, agar kamu cenderung dan
-          merasa tentram kepadanya, dan Dia menjadikan di antaramu rasa kasih
-          dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat
-          tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
-        </p>
+    <section
+      class="home mx-auto text-center d-flex justify-content-center align-items-center"
+      id="home"
+    >
+      <div class="frame">
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
+      <div class="container position-absolute align-items-center">
+        <h1>Reza & Ami</h1>
+        <p>Sabtu, 20 April 2024</p>
+        <button id="saveDateButton" class="btn btn-lg">Save the date</button>
       </div>
     </section>
 
     <section id="mempelai" class="mempelai">
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="frame-tl position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="frame-tr position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
       <div class="container">
         <div class="row justify-content-center">
           <div
@@ -219,7 +316,61 @@
       </div>
     </section>
 
+    <section class="quotes" id="quotes">
+      <div>
+        <div
+          class="container text-center p-5"
+          data-aos="zoom-in"
+          data-aos-easing="ease-out"
+          data-aos-duration="3000"
+        >
+          <p>
+            "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+            pasangan-pasangan untukmu dari jenis sendiri, agar kamu cenderung
+            dan merasa tentram kepadanya, dan Dia menjadikan di antaramu rasa
+            kasih dan sayang. Sungguh, pada yang demikian itu benar-benar
+            terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+          </p>
+          <h1>Qs. Ar-Rum 21</h1>
+        </div>
+      </div>
+    </section>
+
     <section id="info" class="info">
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="frame-tl position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="frame-tr position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
       <div class="container">
         <div class="row justify-content-center">
           <div
@@ -228,7 +379,7 @@
             data-aos-easing="ease-out"
             data-aos-duration="2000"
           >
-            <h2>Informasi Acara</h2>
+            <h2 class="mb-5 mt-5">Informasi Acara</h2>
             <p class="alamat">
               Jl. Merak No.11, Komplek Perumahan Pemda Langkat, Kwala Bingai,
               Kec. Stabat, Kab. Langkat, Sumatera Utara
@@ -252,35 +403,6 @@
         </div>
 
         <div class="row justify-content-center mt-4">
-          <!-- <div
-            class="col-md-5 col-10"
-            data-aos="zoom-in"
-            data-aos-easing="ease-in"
-            data-aos-duration="2000"
-          >
-            <div class="card text-center text-bg-light mb-5">
-              <div class="card-header fw-bold">AKAD NIKAH</div>
-              <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-md-6 pemisah">
-                    <i class="bi bi-calendar3 d-block"></i>
-                    <span
-                      >Kamis <br />
-                      25 Januari 2024</span
-                    >
-                  </div>
-                  <div class="col-md-6">
-                    <i class="bi bi-clock d-block"></i>
-                    <span
-                      >Pukul <br />
-                      09.00 - 11.00</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
           <div
             class="col-md-5 col-10"
             data-aos="zoom-in"
@@ -314,6 +436,40 @@
     </section>
 
     <section class="gallery" id="gallery">
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="frame-tl position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="frame-tr position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
       <div class="container">
         <div class="row justify-content-center">
           <div
@@ -335,9 +491,9 @@
             data-aos-easing="ease-in-out"
             data-aos-duration="2000"
           >
-            <a href="img/mempelai/1.jpg" data-lightbox="gallery">
+            <a href="./img/mempelai/compressed/1.jpg" data-lightbox="gallery">
               <img
-                src="img/mempelai/thumbnail/1.jpg"
+                src="./img/mempelai/thumbnail/1.jpeg"
                 alt="Ami Reza 1"
                 class="img-fluid w-100 rounded"
                 data-lightbox="gallery"
@@ -350,9 +506,9 @@
             data-aos-easing="ease-in-out"
             data-aos-duration="2000"
           >
-            <a href="img/mempelai/2.jpg" data-lightbox="gallery">
+            <a href="./img/mempelai/compressed/2.jpg" data-lightbox="gallery">
               <img
-                src="img/mempelai/thumbnail/2.jpg"
+                src="./img/mempelai/thumbnail/2.jpeg"
                 alt="Ami Reza 2"
                 class="img-fluid w-100 rounded"
                 data-lightbox="gallery"
@@ -365,9 +521,9 @@
             data-aos-easing="ease-in-out"
             data-aos-duration="2000"
           >
-            <a href="img/mempelai/3.jpg" data-lightbox="gallery">
+            <a href="./img/mempelai/compressed/3.jpg" data-lightbox="gallery">
               <img
-                src="img/mempelai/thumbnail/3.jpg"
+                src="img/mempelai/thumbnail/3.jpeg"
                 alt="Ami Reza 3"
                 class="img-fluid w-100 rounded"
                 data-lightbox="gallery"
@@ -380,9 +536,65 @@
             data-aos-easing="ease-in-out"
             data-aos-duration="2000"
           >
-            <a href="img/mempelai/4.jpg" data-lightbox="gallery">
+            <a href="./img/mempelai/compressed/4.jpg" data-lightbox="gallery">
               <img
-                src="img/mempelai/thumbnail/4.jpg"
+                src="./img/mempelai/thumbnail/4.jpeg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/compressed/5.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/thumbnail/5.jpeg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/compressed/6.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/thumbnail/6.jpeg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/compressed/7.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/thumbnail/7.jpeg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/compressed/9.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/thumbnail/9.jpeg"
                 alt="Ami Reza 4"
                 class="img-fluid w-100 rounded"
               />
@@ -395,68 +607,52 @@
           data-aos-easing="ease-in-out"
           data-aos-duration="2000"
         >
-          <a href="img/mempelai/5.jpg" data-lightbox="gallery">
+          <a href="./img/mempelai/compressed/8.jpg" data-lightbox="gallery">
             <img
-              src="img/mempelai/5.jpg"
-              alt="Ami Reza 5"
+              src="./img/mempelai/thumbnail/8.jpeg"
+              alt="Ami Reza 4"
               class="img-fluid w-100 rounded"
             />
           </a>
-        </div>
-
-        <div
-          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-2 justify-content-center"
-        >
-          <div
-            class="col mt-4"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-out"
-            data-aos-duration="2000"
-          >
-            <a href="img/mempelai/6.jpg" data-lightbox="gallery">
-              <img
-                src="img/mempelai/6.jpg"
-                alt="Ami Reza 6"
-                class="img-fluid w-100 rounded"
-                data-lightbox="gallery"
-              />
-            </a>
-          </div>
-          <div
-            class="col mt-4"
-            data-aos="fade-left"
-            data-aos-easing="ease-in-out"
-            data-aos-duration="2000"
-          >
-            <a href="img/mempelai/7.jpg" data-lightbox="gallery">
-              <img
-                src="img/mempelai/7.jpg"
-                alt="Ami Reza 7"
-                class="img-fluid w-100 rounded"
-                data-lightbox="gallery"
-              />
-            </a>
-          </div>
-          <div
-            class="col mt-4"
-            data-aos="zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-duration="2000"
-          >
-            <a href="img/mempelai/8.jpg" data-lightbox="gallery">
-              <img
-                src="img/mempelai/8.jpg"
-                alt="Ami Reza 3"
-                class="img-fluid w-100 rounded"
-                data-lightbox="gallery"
-              />
-            </a>
-          </div>
         </div>
       </div>
     </section>
 
     <section id="gifts" class="gifts">
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="frame-tl position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="frame-tr position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
@@ -479,6 +675,9 @@
             >
               <p id="myInput" class="fw-bold">0622510506</p>
               <p>BNI - Ulfia Rahmi Hasibuan</p>
+              <button class="btn btn-gifts btn-lg py-3 my-4">
+                Salin Nomor Rekening
+              </button>
             </div>
           </div>
         </div>
@@ -486,22 +685,40 @@
     </section>
 
     <section class="thanks" id="thanks">
-      <img
-        src="img/frame-br.png"
-        alt=""
-        class="frame-br position-absolute bottom-0 end-0"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-easing="ease-out"
-      />
-      <img
-        src="img/frame-bl.png"
-        alt=""
-        class="frame-bl position-absolute bottom-0 start-0"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-easing="ease-out"
-      />
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="frame-tl position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="frame-tr position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
       <div
         class="container text-center"
         data-aos="zoom-out"
@@ -510,15 +727,14 @@
       >
         <p>
           Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila
-          Bapak/Ibu/Saudara/i berkenan hadir dan memberikan do'a restu kepada
-          kedua mempelai.
+          Bapak/Ibu/Saudara/i berkenan hadir dalam acara ngunduh mantu ini.
         </p>
         <p>Hormat Kami Yang Mengundang</p>
         <h1>Reza & Ami</h1>
       </div>
     </section>
 
-    <footer>
+    <!-- <footer>
       <div class="container">
         <div class="row">
           <div class="col text-center">
@@ -533,17 +749,17 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div id="audio-container">
       <audio id="song" autoplay loop>
         <source
-          src="Audio/Kenny G - Forever In Love (Official Video).mp3"
+          src="Audio/Shania Twain - From This Moment On.mp3"
           type="audio/mp3"
         />
       </audio>
       <div class="audio-icon-wrapper" style="display: none">
-        <i class="bi bi-disc"></i>
+        <i class="bi bi-disc-fill"></i>
       </div>
     </div>
 
@@ -600,23 +816,27 @@
         rootElement.style.scrollBehavior = "smooth";
         // localStorage.setItem("opened", "true");
         playAudio();
+        document.getElementById("navbar").style.display = "flex";
       }
       function playAudio() {
         song.volume = 0.3;
         audioIconWrapper.style.display = "flex";
         song.play();
         isPlaying = true;
+        audioIconWrapper.style.animationPlayState = "running";
       }
 
       audioIconWrapper.onclick = function () {
         if (isPlaying) {
           song.pause();
-          audioIcon.classList.remove("bi-disc");
-          audioIcon.classList.add("bi-pause-circle");
+          audioIcon.classList.remove("bi-disc-fill");
+          audioIcon.classList.add("bi-pause-circle-fill");
+          audioIconWrapper.style.animationPlayState = "paused";
         } else {
           song.play();
-          audioIcon.classList.add("bi-disc");
-          audioIcon.classList.remove("bi-pause-circle");
+          audioIcon.classList.add("bi-disc-fill");
+          audioIcon.classList.remove("bi-pause-circle-fill");
+          audioIconWrapper.style.animationPlayState = "running";
         }
 
         isPlaying = !isPlaying;

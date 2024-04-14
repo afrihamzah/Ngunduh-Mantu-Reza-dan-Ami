@@ -1,7 +1,7 @@
 :root {
   --shadow: 0px 1px 2px rgb(217, 217, 217);
   --font: #3f2d18;
-  --cream: #b7856a;
+  --cream: #763306;
 }
 
 @font-face {
@@ -18,14 +18,23 @@ body {
   min-height: 100vh;
   font-size: 1.6rem;
   background-image: url(img/bg.jpeg);
-  background-size: cover;
-  background-position: center;
+  background-size:cover;
+  background-position:center;
   width: 100%;
   height: 100%;
   position: relative;
+  transition: opacity 1s ease-out, max-height 1s ease;
+  opacity: 1; /* Adjusted as per instructions */
 }
 
-.hero h1 {
+.hero.hide {
+  opacity: 0;
+  max-height: 0; /* Adjusted as per instructions */
+  overflow: hidden; /* Adjusted as per instructions */
+  transition: opacity 1s ease, max-height 1s ease; /* Adjusted as per instructions */
+}
+
+.hero h1, .home h1 {
   font-family: monotype;
   font-size: 6rem;
   text-shadow: var(--shadow);
@@ -65,22 +74,46 @@ body {
   width: 350px;
 }
 
-.mynavbar {
-  background-color: rgb(255, 255, 255) !important;
-  padding: 0rem 5rem;
+.narvbar-nav{
+  color:var(--font);
 }
 
-.mynavbar .navbar-brand {
-  font-family: "Ephesis", cursive;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: var(--cream);
+.navbar .nav-link{
+  padding: 10px 0;  
+  fill: white;
+  background-color:rgb(146, 73, 21);
+  border-radius: 10px;
 }
 
-.mynavbar .nav-link {
-  text-transform: uppercase;
-  color: var(--cream);
+
+.home{
+  min-height: 100vh;
+  background-image: url(img/mempelai/compressed/1Large.png);
+  background-size:135%;
+  background-position:top;
+  background-repeat: no-repeat;
+  position: relative;
 }
+
+.home .container{
+  display: flex;
+  flex-direction: column;
+  bottom: 20%;
+  text-align: center;
+}
+
+
+.home p{
+  font-size:2rem;
+}
+.home button{
+  font-size: 2rem;
+  color: white;
+  background-color: #763306;
+  box-shadow: var(--shadow);
+  margin-top: 1rem;
+}
+
 
 .mempelai {
   background-image: url(img/bg.jpeg);
@@ -111,7 +144,6 @@ body {
 }
 
 .nama-mempelai h1 {
-  font-size: 3.5rem;
   font-family: serif;
   color: var(--cream);
   text-shadow: var(--shadow);
@@ -134,7 +166,6 @@ body {
 
 .info,
 .rsvp,
-.quotes,
 .thanks,
 .gallery,
 .gifts {
@@ -175,7 +206,7 @@ body {
   background-size: cover;
   color: var(--cream) !important;
   letter-spacing: 0.1rem;
-  border: 1px solid var(--cream);
+  border: 2px solid var(--cream);
   border-radius: 20px;
   padding: 10px 30px 30px 30px;
 }
@@ -202,6 +233,10 @@ body {
   padding: 1rem 2rem;
 }
 
+.gallery{
+  padding: 100px 0;
+}
+
 .rsvp button {
   background-color: var(--cream);
   border: 1px solid var(--cream);
@@ -219,14 +254,20 @@ body {
 }
 
 .quotes {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 5px;
   font-size: 20px;
   align-items: center;
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  min-height: 100vh;
+  background-image: url(img/bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-top: 20px solid var(--cream);
+  border-bottom: 20px solid var(--cream);
+
+}
+.quotes .container{
+  border: 5px solid var(--cream);
 }
 
 .quotes h1 {
@@ -234,9 +275,10 @@ body {
   font-weight: bold;
   margin-bottom: 3rem;
   color: var(--cream);
+  margin-top: 20px;
 }
 
-.gifts img {
+.gifts .container img {
   width: 130px;
   margin-bottom: -30px;
   margin-bottom: 20px;
@@ -244,6 +286,12 @@ body {
 
 .gifts p {
   margin-bottom: 0;
+}
+
+.gifts button {
+  background-color: var(--cream);
+  color: white;
+  font-size: 1.5rem;
 }
 
 .thanks h1 {
@@ -267,18 +315,23 @@ footer a {
   height: 4rem;
   font-size: 4rem;
   position: fixed;
-  bottom: 2.5rem;
-  right: 2rem;
   cursor: pointer;
-  color: white;
-  opacity: 0.5;
-  mix-blend-mode: difference;
-  animation: rotating 4s linear infinite;
-  transform-origin: center;
+  color: var(--cream);
   display: flex;
   justify-content: center;
   align-items: center;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
   line-height: 0;
+
+}
+
+#audio-container {
+  position: fixed;
+  bottom: 15%;
+  right: 10%;
+  transform: translateY(-50%);
 }
 
 section {
@@ -292,6 +345,10 @@ section {
   to {
     transform: rotate(360deg);
   }
+}
+
+.bi-disc, .bi-pause-circle {
+  color: black;
 }
 
 /* Media Query */
@@ -315,11 +372,6 @@ section {
     margin: 5px;
   }
 
-  .mynavbar .nav-link {
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: center;
-  }
 
   .sticky-top {
     overflow: hidden;
@@ -385,7 +437,7 @@ section {
   .frame-tr,
   .frame-bl,
   .frame-br {
-    width: 250px;
+    width: 150px;
   }
 
   .gallery {
