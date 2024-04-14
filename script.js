@@ -36,29 +36,19 @@ btnHero.addEventListener("click", function(){
   navbar.style.display = 'flex'// Atau 'block' tergantung pada layout CSS kamu
 })
 
-const saveDateButton = document.getElementById('saveDateButton');
+const addToCalendarButton = document.getElementById('saveDateButton');
 
-saveDateButton.addEventListener('click', () => {
-  const savedDate = new Date(2024, 3, 20); // Tanggal April dimulai dari 0 (Januari = 0, Februari = 1, dst.)
-  const dateString = savedDate.toISOString(); // Mengubah tanggal menjadi format string yang bisa disimpan
+addToCalendarButton.addEventListener('click', () => {
+  const eventTitle = 'Ngunduh Mantu Reza dan Ami'; // Judul acara
+  const eventLocation = 'Jl. Merak No.11 Komplek Perumahan Pemda Langkat Kwala Bingai Kec Stabat Kab Langkat Sumatera Utara'; // Lokasi acara
+  const startDate = new Date(2024, 3, 20); // Tanggal mulai acara (20 April 2024)
+  const endDate = new Date(2024, 3, 20); // Tanggal akhir acara (20 April 2024)
 
-  localStorage.setItem('savedDate', dateString); // Menyimpan tanggal di localStorage
-
-  alert('Tanggal 20 April 2024 telah disimpan!');
+  const calendarUrl = `BEGIN:VEVENT\nSUMMARY:${eventTitle}\nLOCATION:${eventLocation}\nDTSTART:${startDate.toISOString().replace(/-|:|\.\d+/g, '')}\nDTEND:${endDate.toISOString().replace(/-|:|\.\d+/g, '')}\nEND:VEVENT`;
   
-  // Membuka kalender di perangkat pengguna (jika memungkinkan)
-  const isSupported = window.navigator.msLaunchUri !== undefined || navigator.share !== undefined;
-  if (isSupported) {
-    const calendarEvent = {
-      title: 'Acara Penting',
-      start: savedDate,
-      end: savedDate
-    };
-    window.navigator.msLaunchUri(`cal://?action=add&${encodeURIComponent(JSON.stringify(calendarEvent))}`);
-    // Atau navigator.share(new URL('https://www.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent('Acara Penting') + '&dates=' + encodeURIComponent(savedDate) + '/' + encodeURIComponent(savedDate) + '&details=' + encodeURIComponent('Deskripsi Acara') + '&location=' + encodeURIComponent('Lokasi Acara')));
-  } else {
-    alert('Maaf, browser Anda tidak mendukung integrasi otomatis dengan aplikasi kalender.');
-  }
+  const encodedCalendarUrl = encodeURI(`data:text/calendar;charset=utf8,${calendarUrl}`);
+  
+  window.open(encodedCalendarUrl);
 });
 
 
