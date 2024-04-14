@@ -45,7 +45,22 @@ saveDateButton.addEventListener('click', () => {
   localStorage.setItem('savedDate', dateString); // Menyimpan tanggal di localStorage
 
   alert('Tanggal 20 April 2024 telah disimpan!');
+  
+  // Membuka kalender di perangkat pengguna (jika memungkinkan)
+  const isSupported = window.navigator.msLaunchUri !== undefined || navigator.share !== undefined;
+  if (isSupported) {
+    const calendarEvent = {
+      title: 'Acara Penting',
+      start: savedDate,
+      end: savedDate
+    };
+    window.navigator.msLaunchUri(`cal://?action=add&${encodeURIComponent(JSON.stringify(calendarEvent))}`);
+    // Atau navigator.share(new URL('https://www.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent('Acara Penting') + '&dates=' + encodeURIComponent(savedDate) + '/' + encodeURIComponent(savedDate) + '&details=' + encodeURIComponent('Deskripsi Acara') + '&location=' + encodeURIComponent('Lokasi Acara')));
+  } else {
+    alert('Maaf, browser Anda tidak mendukung integrasi otomatis dengan aplikasi kalender.');
+  }
 });
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const copyButton = document.querySelector('.btn-gifts');
