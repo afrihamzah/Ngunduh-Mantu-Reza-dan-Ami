@@ -43,7 +43,6 @@ body {
 
 .hero h2{
   font-size: 3rem;
-  font-weight: bo;
   color: var(--cream);
 }
 
@@ -453,3 +452,4 @@ section {
     font-size: 45%;
   }
 }
+
