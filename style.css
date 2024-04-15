@@ -88,11 +88,12 @@ body {
 
 .home{
   min-height: 100vh;
-  background-image: url(img/mempelai/compressed/1home\ Large.png);
+  background-image: url(img/mempelai/compressed/1home\ Medium.png);
   background-size:135%;
   background-position:top;
   background-repeat: no-repeat;
   position: relative;
+  
 }
 
 .home .container{
