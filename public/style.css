@@ -18,8 +18,8 @@ body {
   min-height: 100vh;
   font-size: 1.6rem;
   background-image: url(img/bg.jpeg);
-  background-size:cover;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
   position: relative;
@@ -34,14 +34,15 @@ body {
   transition: opacity 1s ease, max-height 1s ease; /* Adjusted as per instructions */
 }
 
-.hero h1, .home h1 {
+.hero h1,
+.home h1 {
   font-family: monotype;
   font-size: 6rem;
   text-shadow: var(--shadow);
-  color:var(--cream);
+  color: var(--cream);
 }
 
-.hero h2{
+.hero h2 {
   font-size: 3rem;
   color: var(--cream);
 }
@@ -73,47 +74,43 @@ body {
   width: 350px;
 }
 
-.narvbar-nav{
-  color:var(--font);
+.narvbar-nav {
+  color: var(--font);
 }
 
-.navbar .nav-link{
-  padding: 10px 0;  
+.navbar .nav-link {
+  padding: 10px 0;
   fill: white;
-  background-color:rgb(146, 73, 21);
+  background-color: rgb(146, 73, 21);
   border-radius: 10px;
 }
 
-
-.home{
+.home {
   min-height: 100vh;
   background-image: url(img/mempelai/compressed/1home\ Large-min.png);
-  background-size:135%;
-  background-position:top;
+  background-size: 135%;
+  background-position: top;
   background-repeat: no-repeat;
   position: relative;
-  
 }
 
-.home .container{
+.home .container {
   display: flex;
   flex-direction: column;
   bottom: 20%;
   text-align: center;
 }
 
-
-.home p{
-  font-size:2rem;
+.home p {
+  font-size: 2rem;
 }
-.home button{
+.home button {
   font-size: 2rem;
   color: white;
   background-color: #763306;
   box-shadow: var(--shadow);
   margin-top: 1rem;
 }
-
 
 .mempelai {
   background-image: url(img/bg.jpeg);
@@ -233,7 +230,7 @@ body {
   padding: 1rem 2rem;
 }
 
-.gallery{
+.gallery {
   padding: 100px 0;
 }
 
@@ -254,7 +251,7 @@ body {
 }
 
 .quotes {
-  padding: 5px;
+  padding: 10px 20px;
   font-size: 20px;
   align-items: center;
   display: flex;
@@ -264,9 +261,8 @@ body {
   position: relative;
   border-top: 20px solid var(--cream);
   border-bottom: 20px solid var(--cream);
-
 }
-.quotes .container{
+.quotes .container {
   border: 5px solid var(--cream);
 }
 
@@ -324,7 +320,6 @@ footer a {
   animation: rotating 4s linear infinite;
   transform-origin: center;
   line-height: 0;
-
 }
 
 #audio-container {
@@ -347,7 +342,8 @@ section {
   }
 }
 
-.bi-disc, .bi-pause-circle {
+.bi-disc,
+.bi-pause-circle {
   color: black;
 }
 
@@ -371,7 +367,6 @@ section {
     padding: 50px;
     margin: 5px;
   }
-
 
   .sticky-top {
     overflow: hidden;
@@ -452,4 +447,3 @@ section {
     font-size: 45%;
   }
 }
-
