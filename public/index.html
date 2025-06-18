@@ -645,7 +645,7 @@
     </section>
 
     <div id="audio-container">
-      <audio id="song" autoplay loop>
+      <audio id="song" loop>
         <source
           src="Audio/Shania Twain - From This Moment On.mp3"
           type="audio/mp3" />
@@ -682,7 +682,7 @@
 
     <script>
       const rootElement = document.querySelector(":root");
-      // const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
       const audioIcon = document.querySelector(".audio-icon-wrapper i");
       const song = document.querySelector("#song");
       let isPlaying = false;
@@ -701,7 +701,7 @@
       function enablescroll() {
         window.onscroll = function () {};
         rootElement.style.scrollBehavior = "smooth";
-        localStorage.setItem("opened", "true");
+        // localStorage.setItem("opened", "true");
         playAudio();
       }
       function playAudio() {
@@ -709,28 +709,21 @@
         audioIconWrapper.style.display = "flex";
         song.play();
         isPlaying = true;
-        audioIconWrapper.style.animationPlayState = "running";
       }
 
       audioIconWrapper.onclick = function () {
         if (isPlaying) {
           song.pause();
-          audioIcon.classList.remove("bi-disc-fill");
-          audioIcon.classList.add("bi-pause-circle-fill");
-          audioIconWrapper.style.animationPlayState = "paused";
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
         } else {
           song.play();
-          audioIcon.classList.add("bi-disc-fill");
-          audioIcon.classList.remove("bi-pause-circle-fill");
-          audioIconWrapper.style.animationPlayState = "running";
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
         }
 
         isPlaying = !isPlaying;
       };
-
-      //   if (!localStorage.getItem("opened")) {
-      //     disableScroll();
-      //   }
       disableScroll();
     </script>
 
